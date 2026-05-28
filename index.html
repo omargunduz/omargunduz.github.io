@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer Gündüz | Kıdemli Uzman Tıbbi Tanıtım Temsilcisi & Veri Odaklı Satış Stratejisti</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate900: '#0f172a',
+                        slate800: '#1e293b',
+                        slate700: '#334155',
+                        teal500: '#14b8a6',
+                        teal600: '#0d9488',
+                        indigo500: '#6366f1',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .ai-glow {
+            box-shadow: 0 0 25px -5px rgba(20, 184, 166, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate900 text-slate-100 min-h-screen flex flex-col selection:bg-teal500 selection:text-slate900">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal500 to-indigo500 flex items-center justify-center font-bold text-lg text-slate900 shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+                    ÖG
+                </div>
+                <span class="font-display font-bold text-xl tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent group-hover:to-teal500 transition-all">Ömer Gündüz</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-slate-300 hover:text-teal500 font-medium transition-colors">Hakkımda</a>
+                <a href="#experience" class="text-slate-300 hover:text-teal500 font-medium transition-colors">Deneyim</a>
+                <a href="#skills" class="text-slate-300 hover:text-teal500 font-medium transition-colors">Yetenekler</a>
+                <a href="#ai-hub" class="text-teal-400 hover:text-teal-300 font-semibold flex items-center gap-1.5 transition-colors">
+                    <i class="fa-solid fa-wand-magic-sparkles animate-pulse"></i> AI Laboratuvarı
+                </a>
+                <a href="#projects" class="text-slate-300 hover:text-teal500 font-medium transition-colors">Projeler & Hobiler</a>
+                <a href="#contact" class="px-5 py-2.5 bg-teal600 hover:bg-teal500 text-slate-900 font-semibold rounded-lg shadow-lg shadow-teal-600/20 transition-all hover:-translate-y-0.5 duration-300">İletişime Geç</a>
+            </nav>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-teal500 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobil Menü -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate800 border-b border-slate-700 px-6 py-4 absolute w-full left-0 shadow-xl">
+            <div class="flex flex-col gap-4">
+                <a href="#about" class="mobile-link text-slate-300 hover:text-teal500 py-2">Hakkımda</a>
+                <a href="#experience" class="mobile-link text-slate-300 hover:text-teal500 py-2">Deneyim</a>
+                <a href="#skills" class="mobile-link text-slate-300 hover:text-teal500 py-2">Yetenekler</a>
+                <a href="#ai-hub" class="mobile-link text-teal-400 font-semibold py-2"><i class="fa-solid fa-wand-magic-sparkles mr-1.5"></i> AI Laboratuvarı</a>
+                <a href="#projects" class="mobile-link text-slate-300 hover:text-teal500 py-2">Projeler & Hobiler</a>
+                <a href="#contact" class="mobile-link text-center px-5 py-2.5 bg-teal600 hover:bg-teal500 text-slate-900 font-semibold rounded-lg">İletişime Geç</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden flex items-center">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-teal600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-teal-400 font-semibold text-sm">
+                    <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+                    8+ Yıl Sektör Deneyimi & Yazılım Altyapısı
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold font-display leading-tight">
+                    Veri ve Teknolojiyle <br>
+                    <span class="bg-gradient-to-r from-teal-400 to-indigo-400 bg-clip-text text-transparent">Saha Satışını Optimize Edin</span>
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-xl">
+                    Ben Ömer Gündüz. Bilgisayar Programcılığı altyapımı ilaç sektöründeki güçlü saha tecrübemle harmanlayarak, satış stratejilerini veri analitiğiyle güçlendiren modern bir saha yöneticisiyim.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button onclick="openCVModal()" class="px-8 py-4 bg-teal-600 hover:bg-teal-500 text-slate-900 font-bold rounded-lg shadow-lg shadow-teal-600/30 transition-all hover:-translate-y-1 duration-300">
+                        CV'mi Görüntüle / İndir
+                    </button>
+                    <a href="#ai-hub" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 border border-indigo-500 text-white font-semibold rounded-lg shadow-lg shadow-indigo-600/20 transition-all hover:-translate-y-1 duration-300">
+                        <i class="fa-solid fa-brain mr-2"></i>AI ile Konuş
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 h-72 md:w-92 md:h-92">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-500 to-indigo-500 rounded-2xl rotate-6 scale-95 opacity-30 blur-sm"></div>
+                    <div class="absolute inset-0 bg-slate-800 rounded-2xl border border-slate-700 flex flex-col overflow-hidden shadow-2xl">
+                        <!-- Terminal Başlığı -->
+                        <div class="bg-slate-950 px-4 py-3 flex items-center gap-2 border-b border-slate-800">
+                            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            <span class="text-xs text-slate-500 ml-2 font-mono">omer_gunduz.py</span>
+                        </div>
+                        <!-- Terminal İçeriği -->
+                        <div class="p-6 font-mono text-xs md:text-sm space-y-4 flex-grow overflow-y-auto text-teal-400">
+                            <p class="text-slate-500">&gt;&gt;&gt; import specialist</p>
+                            <p class="text-slate-500">&gt;&gt;&gt; specialist.get_identity()</p>
+                            <p class="text-white">"Ömer Gündüz, Diyarbakır, 1995"</p>
+                            <p class="text-slate-500">&gt;&gt;&gt; specialist.get_skills()</p>
+                            <p class="text-indigo-400">['CRM', 'Pazar Analizi', 'C#', 'SQL', 'Hitabet & Tiyatro']</p>
+                            <p class="text-slate-500">&gt;&gt;&gt; specialist.get_regions()</p>
+                            <p class="text-white">['Diyarbakır', 'Mardin', 'Van']</p>
+                            <p class="text-slate-500">&gt;&gt;&gt; _</p>
+                            <div class="w-2 h-4 bg-teal-500 animate-pulse inline-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="w-20 h-1 bg-teal500 rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold font-display">Teknoloji ve İletişimin Sinerjisi</h2>
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        Bilgisayar Programcılığı altyapımı ilaç sektöründeki 8 yıllık güçlü saha deneyimiyle birleştireren, veri odaklı ve analitik yaklaşımı yüksek bir Kıdemli Uzman Tıbbi Tanıtım Temsilcisiyim. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Çoklu branş yönetiminde, hedef/bölge analizinde ve müşteri ilişkileri optimizasyonunda (CRM) uzmanlaşarak; Diyarbakır, Mardin ve Van bölgelerinde pazar payı artışı ve yüksek satış başarıları elde ettim. Teknolojiyi ve yazılım mantığını pazar analitiğiyle harmanlayarak şirket hedeflerine stratejik değer katıyorum.
+                    </p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <a href="https://github.com/Lionsamada" target="_blank" class="text-slate-400 hover:text-teal-400 text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ömer-gündüz-77a667b7/" target="_blank" class="text-slate-400 hover:text-teal-400 text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:worldwide.omer@gmail.com" class="text-slate-400 hover:text-teal-400 text-2xl transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-xl bg-slate-900 border border-slate-800">
+                        <div class="w-12 h-12 rounded-lg bg-teal-500/10 flex items-center justify-center text-teal-400 text-xl mb-4">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Pazar & CRM Yönetimi</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Bölge dinamiklerini veriyle analiz ederek müşteri segmentasyonu, hedefli CRM planlamaları ve satış hacmi koruma.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-slate-900 border border-slate-800">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl mb-4">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Yazılım Altyapısı</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Yazılım geliştirme mantığı, veri analitiği, SQL veritabanı sorgulama ve .NET ortamında teknik analiz yeteneği.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20">
+        <div class="max-w-4xl mx-auto px-6 space-y-16">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl md:text-4xl font-bold font-display">Profesyonel Yolculuk</h2>
+                <p class="text-slate-400">Arşiv yönetiminden lider ilaç firmalarındaki kıdemli uzmanlık rollerine uzanan istikrarlı kariyer.</p>
+            </div>
+            
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+                <!-- Vem İlaç -->
+                <div class="relative pl-8">
+                    <div class="absolute w-5 h-5 bg-teal-500 rounded-full -left-[11px] top-1.5 border-4 border-slate-900 shadow-md"></div>
+                    <div class="hidden md:block absolute right-full mr-8 top-1.5 text-right w-32">
+                        <span class="text-sm font-bold text-teal-400">Ağustos 2025 - Devam</span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="md:hidden inline-block text-xs font-bold text-teal-400">Ağustos 2025 - Devam</span>
+                        <h3 class="text-xl font-bold text-white">Kıdemli Uzman Tıbbi Tanıtım Temsilcisi</h3>
+                        <p class="text-teal-400 text-sm font-medium">Vem İlaç Pazarlama Şti. | Diyarbakır</p>
+                        <ul class="text-slate-400 text-sm space-y-1.5 list-disc list-inside">
+                            <li>Diyarbakır, Mardin ve Van illerini kapsayan geniş bölgede veri odaklı tanıtım stratejilerini yönetmek.</li>
+                            <li>Bölge pazar dinamiklerini analiz ederek hekim portföyünü segmentlere ayırmak ve sadakati artıran CRM metodolojileri sergilemek.</li>
+                            <li>Departman içi işbirliğini artırarak takımın dönemsel satış hedeflerine ulaşmasında aktif rol oynamak.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Santa Farma -->
+                <div class="relative pl-8">
+                    <div class="absolute w-5 h-5 bg-indigo-500 rounded-full -left-[11px] top-1.5 border-4 border-slate-900 shadow-md"></div>
+                    <div class="hidden md:block absolute right-full mr-8 top-1.5 text-right w-32">
+                        <span class="text-sm font-bold text-indigo-400">Mayıs 2024 - Ağustos 2025</span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="md:hidden inline-block text-xs font-bold text-indigo-400">Mayıs 2024 - Ağustos 2025</span>
+                        <h3 class="text-xl font-bold text-white">Tıbbi Tanıtım Temsilcisi</h3>
+                        <p class="text-indigo-400 text-sm font-medium">Santa Farma İlaç Sanayii A.Ş. | Diyarbakır</p>
+                        <ul class="text-slate-400 text-sm space-y-1.5 list-disc list-inside">
+                            <li>Ortopedi, Fizik Tedavi, KBB, Pediatri, Beyin Cerrahisi, Acil ve Aile Hekimliği branşlarında uzmanlaşmış sağlık profesyonellerine bilimsel ve ticari ürün sunumları gerçekleştirmek.</li>
+                            <li>Sistemli ve disiplinli ziyaret planlamalarıyla hekim/eczacı ilişkilerini yönetmek.</li>
+                            <li>Düzenli eğitimler ve yuvarlak masa toplantıları koordine ederek medikal farkındalığı artırmak.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Koçak Farma -->
+                <div class="relative pl-8">
+                    <div class="absolute w-5 h-5 bg-slate-700 rounded-full -left-[11px] top-1.5 border-4 border-slate-900 shadow-md"></div>
+                    <div class="hidden md:block absolute right-full mr-8 top-1.5 text-right w-32">
+                        <span class="text-sm font-bold text-slate-400">Mart 2020 - Mayıs 2024</span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="md:hidden inline-block text-xs font-bold text-slate-400">Mart 2020 - Mayıs 2024</span>
+                        <h3 class="text-xl font-bold text-white">Tıbbi Tanıtım Temsilcisi</h3>
+                        <p class="text-slate-400 text-sm font-medium">Koçak Farma İlaç Ve Kimya Sanayi A.Ş. | Mardin & Diyarbakır</p>
+                        <ul class="text-slate-400 text-sm space-y-1.5 list-disc list-inside">
+                            <li>Kadın Doğum, Dahiliye, Endokrin, Hematoloji, Üroloji ve Aile Hekimliği branşlarında aktif portföy yönetimi.</li>
+                            <li>Mardin'de sıfırdan kurulan ilişkileri başarıyla yöneterek marka bilinirliğini üst seviyeye taşımak; 2022'de operasyonu Diyarbakır bölgesine başarıyla transfer etmek.</li>
+                            <li>Rakip ve pazar analizleri gerçekleştirerek, daralan pazar koşullarında dahi satış hacmini koruyacak planlamaları hayata geçirmek.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Özel Cihanpol -->
+                <div class="relative pl-8">
+                    <div class="absolute w-5 h-5 bg-slate-700 rounded-full -left-[11px] top-1.5 border-4 border-slate-900 shadow-md"></div>
+                    <div class="hidden md:block absolute right-full mr-8 top-1.5 text-right w-32">
+                        <span class="text-sm font-bold text-slate-400">Mayıs 2017 - Haziran 2019</span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="md:hidden inline-block text-xs font-bold text-slate-400">Mayıs 2017 - Haziran 2019</span>
+                        <h3 class="text-xl font-bold text-white">Arşiv Sorumlusu</h3>
+                        <p class="text-slate-400 text-sm font-medium">Özel Cihanpol Hastanesi | Mardin</p>
+                        <ul class="text-slate-400 text-sm space-y-1.5 list-disc list-inside">
+                            <li>Fiziksel ve dijital belge yönetimi süreçlerini yeniden yapılandırarak bilgiye erişim süresini optimize etmek.</li>
+                            <li>Hasta kayıtlarının veri güvenliği standartlarına ve yasal mevzuatlara uygunluğunu denetlemek.</li>
+                            <li>Departmanlar arası bilgi akış hızı için arşivleme standartları belirlemek.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-4">
+                <h2 class="text-3xl md:text-4xl font-bold font-display">Entegre Yetenek Matrisi</h2>
+                <p class="text-slate-400">Saha yönetiminin gücü ile veri teknolojilerinin verimliliğini buluşturan yetkinliklerim.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Satış & Strateji -->
+                <div class="p-8 rounded-xl bg-slate-900 border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold flex items-center gap-2 text-teal-400">
+                        <i class="fa-solid fa-square-poll-vertical"></i> Satış & Stratejik Pazarlama
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Portföy Yönetimi</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Bölge Segmentasyonu</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">CRM Stratejileri</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Bütçe Planlama</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Rakip Analizi</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Kampanya Yönetimi</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Ürün Tanıtımı</span>
+                    </div>
+                </div>
+
+                <!-- Teknik & Yazılım -->
+                <div class="p-8 rounded-xl bg-slate-900 border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold flex items-center gap-2 text-indigo-400">
+                        <i class="fa-solid fa-code"></i> Teknik & Yazılım Altyapısı
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">.NET C#</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">ASP.NET</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">MSSQL Server</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Web Database</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Algoritma Tasarımı</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Veri Analitiği</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Web Sitesi Tasarımı</span>
+                    </div>
+                </div>
+
+                <!-- İletişim & Liderlik -->
+                <div class="p-8 rounded-xl bg-slate-900 border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold flex items-center gap-2 text-amber-400">
+                        <i class="fa-solid fa-users"></i> Sosyal & Yönetici Becerileri
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Sunum Becerileri</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">İkna Kabiliyeti</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Uygulamalı Tiyatro</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Beden Dili & Hitabet</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Takım Çalışması</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs rounded text-slate-300">Süreç Yönetimi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-hub" class="py-20 relative overflow-hidden bg-slate-900 border-b border-slate-800">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-[160px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 space-y-12 relative z-10">
+            <div class="text-center space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-wand-magic-sparkles animate-pulse"></i> Gemini 3.1 Destekli Asistan
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold font-display">Ömer Gündüz AI Laboratuvarı</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Gemini API gücüyle özgeçmiş verilerimi doğrudan analiz eden ve sizinle profesyonel olarak konuşan akıllı asistan araçlarını test edin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Dijital İkiz Chatbot -->
+                <div class="lg:col-span-6 bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col h-[520px] shadow-xl ai-glow">
+                    <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Ömer'in Dijital İkizi</h3>
+                                <p class="text-xs text-teal-400 flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Çevrimiçi / CV Grounded
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="clearChat()" class="text-slate-400 hover:text-red-400 text-xs flex items-center gap-1 transition-colors">
+                            <i class="fa-solid fa-trash-can"></i> Temizle
+                        </button>
+                    </div>
+
+                    <!-- Chat Alanı -->
+                    <div id="chat-box" class="flex-grow overflow-y-auto space-y-4 pr-2 text-sm max-h-[300px]">
+                        <div class="bg-slate-900/60 border border-slate-800 p-3 rounded-xl max-w-[85%] text-slate-300">
+                            Merhaba! Ben Ömer Gündüz'ün dijital ikiziyim. 8 yıllık saha tecrübem, ilaç sektörü başarılarım ve yazılım yetkinliklerim hakkında dilediğinizi sorabilirsiniz.
+                        </div>
+                    </div>
+
+                    <!-- Hızlı Sorular -->
+                    <div class="mt-4 flex flex-wrap gap-1.5 pb-2 border-t border-slate-700/40 pt-3">
+                        <button onclick="quickAsk('Hangi branşlarda saha tecrüben var?')" class="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 px-2.5 py-1 rounded-full transition-colors">Saha Tecrübeleri</button>
+                        <button onclick="quickAsk('Yazılım altyapın ve bildiğin diller neler?')" class="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 px-2.5 py-1 rounded-full transition-colors">Yazılım Altyapısı</button>
+                        <button onclick="quickAsk('Tiyatro eğitiminin sana sahada ne faydası oldu?')" class="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 px-2.5 py-1 rounded-full transition-colors">Tiyatro & İletişim</button>
+                    </div>
+
+                    <!-- Giriş Barı -->
+                    <div class="flex gap-2 mt-2">
+                        <input id="chat-input" type="text" placeholder="Ömer hakkında bir şey sorun..." onkeydown="if(event.key === 'Enter') sendChatMessage()" class="flex-grow bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-teal-500 transition-colors">
+                        <button id="chat-send-btn" onclick="sendChatMessage()" class="px-5 bg-teal-600 hover:bg-teal-500 text-slate-900 rounded-lg font-bold flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Akıllı Ön Yazı Oluşturucu -->
+                <div class="lg:col-span-6 bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 flex flex-col h-[520px] shadow-xl ai-glow">
+                    <div class="flex items-center gap-3 border-b border-slate-700 pb-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm">Akıllı Ön Yazı Oluşturucu</h3>
+                            <p class="text-xs text-slate-400">Şirketinize ve pozisyonunuza özel motivasyon mektubu</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 flex-grow flex flex-col justify-between overflow-y-auto max-h-[440px]">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Şirket / Kurum Adı</label>
+                                <input id="letter-company" type="text" placeholder="Örn: Vem İlaç, Novartis" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div class="space-y-1">
+                                <label class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Aranan Pozisyon</label>
+                                <input id="letter-role" type="text" placeholder="Örn: Kıdemli Temsilci, Bölge Müdürü" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Önizleme Paneli -->
+                        <div class="flex-grow mt-4 border border-slate-700 bg-slate-900/80 rounded-xl p-4 overflow-y-auto text-xs relative text-slate-300 font-mono leading-relaxed min-h-[180px]">
+                            <div id="letter-loader" class="hidden absolute inset-0 bg-slate-950/80 flex flex-col items-center justify-center space-y-3 rounded-xl">
+                                <i class="fa-solid fa-circle-notch animate-spin text-indigo-400 text-3xl"></i>
+                                <span class="text-indigo-400 font-sans font-semibold">Gemini ön yazıyı hazırlıyor...</span>
+                            </div>
+                            <div id="letter-output" class="whitespace-pre-wrap">Ön yazı oluşturmak için yukarıdaki alanları doldurup "Ön Yazı Üret" butonuna basın. Ömer'in tecrübesiyle şekillenen özel bir mektup buraya yazılacaktır...</div>
+                        </div>
+
+                        <div class="flex gap-3 mt-4">
+                            <button onclick="copyLetter()" class="px-4 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-bold text-sm transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-copy"></i> Kopyala
+                            </button>
+                            <button onclick="generateLetter()" class="flex-grow py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-bold text-sm transition-colors flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
+                                <i class="fa-solid fa-magic"></i> Ön Yazı Üret
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-bold font-display">Projeler, Sertifikalar & Hobiler</h2>
+                    <p class="text-slate-400 max-w-lg">Sektörel gelişim sertifikalarım, yazılım projelerim ve yaratıcı ilgi alanlarım.</p>
+                </div>
+                <!-- Filtre Menüsü -->
+                <div class="flex flex-wrap gap-2 bg-slate-800/80 p-1.5 rounded-lg border border-slate-700">
+                    <button onclick="filterItems('all')" class="tab-btn active px-4 py-2 rounded-md bg-teal-600 text-slate-900 text-xs font-bold uppercase transition-all">Hepsi</button>
+                    <button onclick="filterItems('cert')" class="tab-btn px-4 py-2 rounded-md text-slate-400 hover:text-white text-xs font-bold uppercase transition-all">Sertifikalar</button>
+                    <button onclick="filterItems('hobby')" class="tab-btn px-4 py-2 rounded-md text-slate-400 hover:text-white text-xs font-bold uppercase transition-all">Yaratıcı Hobiler</button>
+                </div>
+            </div>
+            
+            <div id="items-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ÜTT Belgesi -->
+                <div class="grid-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300" data-category="cert">
+                    <div class="h-40 bg-slate-950 flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent"></div>
+                        <i class="fa-solid fa-id-card text-5xl text-teal-400"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-teal-400 uppercase tracking-wider">T.C. Sağlık Bakanlığı</span>
+                        <h3 class="text-lg font-bold text-white">Ürün Tanıtım Temsilcisi Belgesi (ÜTT)</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            İstanbul Ticaret Üniversitesi bünyesinde alınan, ilaç sektöründe tıbbi tanıtım yapabilmek için gerekli yasal mesleki yeterlilik belgesi (Ağustos 2020).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tiyatro Eğitimi -->
+                <div class="grid-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300" data-category="cert">
+                    <div class="h-40 bg-slate-950 flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent"></div>
+                        <i class="fa-solid fa-masks-theater text-5xl text-indigo-400"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Halk Eğitim Merkezi</span>
+                        <h3 class="text-lg font-bold text-white">Uygulamalı Tiyatro Eğitimi</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Mardin Artuklu Halk Eğitim Merkezi'nden alınan uygulamalı eğitim (Ocak-Haziran 2023). Sahadaki hekim/eczacı sunumlarında beden dili ve ikna kabiliyetini optimize etme odaklıdır.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Marka Danışmanlığı -->
+                <div class="grid-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300" data-category="cert">
+                    <div class="h-40 bg-slate-950 flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent"></div>
+                        <i class="fa-solid fa-copyright text-5xl text-indigo-400"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Orta Doğu Patent</span>
+                        <h3 class="text-lg font-bold text-white">Marka Danışmanlığı</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Fikri sınai mülkiyet, marka tescili, kurumsal kimlik korunumu ve marka konumlandırma üzerine stratejik yetkinlik semineri (Kasım 2013).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Web Sitesi & Arayüz Tasarımı -->
+                <div class="grid-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300" data-category="hobby">
+                    <div class="h-40 bg-slate-950 flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent"></div>
+                        <i class="fa-solid fa-laptop-code text-5xl text-amber-400"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Dijital Yetkinlik</span>
+                        <h3 class="text-lg font-bold text-white">Web Tasarımı & Programlama</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Google Sites, WordPress veya özel kodlu (HTML, CSS, JS) arayüzler geliştirerek modern web platformları oluşturma tutkusu.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Grafik & Logo Tasarımı -->
+                <div class="grid-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300" data-category="hobby">
+                    <div class="h-40 bg-slate-950 flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent"></div>
+                        <i class="fa-solid fa-palette text-5xl text-amber-400"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Yaratıcı Sanatlar</span>
+                        <h3 class="text-lg font-bold text-white">Grafik & Logo Tasarımı</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Markaların dijital kimliklerini oluşturmak için vektörel logo, kurumsal kimlik unsurları ve sosyal medya görselleri tasarlama deneyimi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-800/40 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold font-display">Benimle <br><span class="text-teal-400">İletişime Geçin</span></h2>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Saha stratejilerinizi veri analiziyle geliştirmek, portföy yönetiminde yeni işbirlikleri kurmak veya yazılım projelerimi konuşmak için aşağıdaki kanallardan veya form üzerinden doğrudan bana ulaşabilirsiniz.
+                </p>
+                
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-teal-400">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <a href="mailto:worldwide.omer@gmail.com" class="text-slate-300 text-sm hover:text-teal-400 transition-colors">worldwide.omer@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-teal-400">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <a href="tel:+905512618449" class="text-slate-300 text-sm hover:text-teal-400 transition-colors">+90 (551) 261 84 49</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <span class="text-slate-300 text-sm">Diyarbakır, Merkez</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7 bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Adınız Soyadınız</label>
+                            <input required type="text" id="form-name" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">E-posta Adresiniz</label>
+                            <input required type="email" id="form-email" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Konu</label>
+                        <input required type="text" id="form-subject" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-teal-500 transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Mesajınız</label>
+                        <textarea required rows="4" id="form-message" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-teal-500 transition-colors resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-teal-600 hover:bg-teal-500 text-slate-900 font-bold rounded-lg shadow-lg shadow-teal-600/30 transition-all duration-300">
+                        Mesaj Gönder
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <span class="text-sm text-slate-500">&copy; 2026 Ömer Gündüz. Tüm hakları saklıdır.</span>
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/Lionsamada" target="_blank" class="text-slate-500 hover:text-white text-xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/ömer-gündüz-77a667b7/" target="_blank" class="text-slate-500 hover:text-white text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:worldwide.omer@gmail.com" class="text-slate-500 hover:text-white text-xl transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cv-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-4xl overflow-hidden shadow-2xl relative flex flex-col max-h-[92vh]">
+            <!-- Modal Header -->
+            <div class="p-5 border-b border-slate-800 bg-slate-900 flex items-center justify-between">
+                <h3 class="text-lg font-bold text-teal-400 flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> Ömer Gündüz - Profesyonel Özgeçmiş
+                </h3>
+                <button onclick="closeCVModal()" class="text-slate-400 hover:text-white text-2xl focus:outline-none">&times;</button>
+            </div>
+            
+            <!-- Modal Body (Sanal Dijital CV Sayfası) -->
+            <div class="p-8 overflow-y-auto space-y-8 flex-grow bg-white text-slate-900 font-sans">
+                <!-- Üst Alan -->
+                <div class="flex flex-col md:flex-row justify-between items-start border-b-2 border-slate-800 pb-6 gap-4">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">ÖMER GÜNDÜZ</h2>
+                        <p class="text-teal-600 font-bold text-lg mt-1">Kıdemli Uzman Tıbbi Tanıtım Temsilcisi & Veri Odaklı Satış Stratejisti</p>
+                    </div>
+                    <div class="text-left md:text-right text-xs space-y-1 text-slate-600">
+                        <p><i class="fa-solid fa-phone mr-1"></i> +90 (551) 261 84 49</p>
+                        <p><i class="fa-solid fa-envelope mr-1"></i> worldwide.omer@gmail.com</p>
+                        <p><i class="fa-solid fa-map-pin mr-1"></i> Diyarbakır, Merkez</p>
+                        <p><i class="fa-brands fa-github mr-1"></i> github.com/Lionsamada</p>
+                    </div>
+                </div>
+
+                <!-- Özet -->
+                <div class="space-y-2">
+                    <h4 class="font-bold border-b border-slate-300 pb-1 text-slate-950 uppercase tracking-wider text-xs">ÖZGEÇMİŞ ÖZETİ</h4>
+                    <p class="text-sm leading-relaxed text-slate-700">
+                        Bilgisayar Programcılığı altyapımı ilaç sektöründeki 8 yıllık güçlü saha deneyimiyle birleştiren, veri odaklı ve analitik yaklaşımı yüksek bir Kıdemli Uzman Tıbbi Tanıtım Temsilcisiyim. Çoklu branş yönetiminde, hedef/bölge analizinde ve müşteri ilişkileri optimizasyonunda (CRM) uzmanlaşarak; Diyarbakır, Mardin ve Van bölgelerinde pazar payı artışı ve yüksek satış başarıları elde ettim. Teknolojiyi ve yazılım mantığını pazar analitiğiyle harmanlayarak şirket hedeflerine stratejik değer katıyorum.
+                    </p>
+                </div>
+
+                <!-- İş Deneyimleri -->
+                <div class="space-y-4">
+                    <h4 class="font-bold border-b border-slate-300 pb-1 text-slate-950 uppercase tracking-wider text-xs">İŞ DENEYİMLERİ</h4>
+                    
+                    <div class="space-y-1.5 text-sm">
+                        <div class="flex justify-between font-bold text-slate-950">
+                            <span>Kıdemli Uzman Tıbbi Tanıtım Temsilcisi</span>
+                            <span>Ağustos 2025 - Devam Ediyor</span>
+                        </div>
+                        <p class="text-teal-600 font-semibold text-xs">Vem İlaç Pazarlama Şti. | Diyarbakır</p>
+                        <p class="text-slate-600 text-xs">Diyarbakır, Mardin ve Van illerini kapsayan geniş sorumluluk alanında, ürün bilinirliğini ve pazar penetrasyonunu artıracak veri odaklı tanıtım stratejilerini yönetmek. Bölge dinamiklerini analiz ederek müşteri portföyünü segmentlere ayırmak ve sadakati artıran CRM yaklaşımları sergilemek.</p>
+                    </div>
+
+                    <div class="space-y-1.5 text-sm">
+                        <div class="flex justify-between font-bold text-slate-950">
+                            <span>Tıbbi Tanıtım Temsilcisi</span>
+                            <span>Mayıs 2024 - Ağustos 2025</span>
+                        </div>
+                        <p class="text-teal-600 font-semibold text-xs">Santa Farma İlaç Sanayii A.Ş. | Diyarbakır</p>
+                        <p class="text-slate-600 text-xs">Ortopedi, Fizik Tedavi, KBB, Pediatri, Beyin Cerrahisi, Acil Hekimliği ve Aile Hekimliği branşlarında uzmanlaşmış hekimlere bilimsel sunumlar gerçekleştirmek. Sistemli ziyaret planlamaları ve pazar dinamiklerine uygun çözümlerle bölge hedeflerini gerçekleştirmek.</p>
+                    </div>
+
+                    <div class="space-y-1.5 text-sm">
+                        <div class="flex justify-between font-bold text-slate-950">
+                            <span>Tıbbi Tanıtım Temsilcisi</span>
+                            <span>Mart 2020 - Mayıs 2024</span>
+                        </div>
+                        <p class="text-teal-600 font-semibold text-xs">Koçak Farma İlaç Ve Kimya Sanayi A.Ş. | Mardin / Diyarbakır</p>
+                        <p class="text-slate-600 text-xs">Kadın Doğum, Dahiliye, Endokrin, Hematoloji, Üroloji ve Aile Hekimliği branşlarında aktif portföy yönetimi. Mardin'de sıfırdan kurulan ilişkileri yöneterek bölgedeki bilinirliği artırmak ve operasyonu başarıyla Diyarbakır bölgesine transfer etmek.</p>
+                    </div>
+
+                    <div class="space-y-1.5 text-sm">
+                        <div class="flex justify-between font-bold text-slate-950">
+                            <span>Arşiv Sorumlusu</span>
+                            <span>Mayıs 2017 - Haziran 2019</span>
+                        </div>
+                        <p class="text-teal-600 font-semibold text-xs">Özel Cihanpol Hastanesi | Mardin</p>
+                        <p class="text-slate-600 text-xs">Hastane genelindeki fiziksel ve dijital arşiv süreçlerini yeniden yapılandırarak bilgi akışını optimize etmek ve veri güvenliği standartlarını denetlemek.</p>
+                    </div>
+                </div>
+
+                <!-- Eğitim -->
+                <div class="space-y-3">
+                    <h4 class="font-bold border-b border-slate-300 pb-1 text-slate-950 uppercase tracking-wider text-xs">EĞİTİM BİLGİLERİ</h4>
+                    <div class="text-sm">
+                        <div class="flex justify-between font-bold text-slate-950">
+                            <span>Ön Lisans | Bilgisayar Programcılığı</span>
+                            <span>Eylül 2013 - Haziran 2015</span>
+                        </div>
+                        <p class="text-slate-600 text-xs">Adıyaman Üniversitesi - Bilgisayar Bilimleri Fakültesi</p>
+                        <p class="text-slate-500 italic text-xs mt-1">Diploma Notu (GNO): 3.20 / 4.00</p>
+                    </div>
+                </div>
+
+                <!-- Referanslar -->
+                <div class="space-y-3">
+                    <h4 class="font-bold border-b border-slate-300 pb-1 text-slate-950 uppercase tracking-wider text-xs">REFERANSLAR</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div>
+                            <p class="font-bold text-slate-900">Doç. Dr. Akın Önder</p>
+                            <p class="text-slate-600">Özel Siirt Hayat Hastanesi - Doçent Doktor</p>
+                            <p class="text-slate-500">İletişim: 531 523 48 11 | draonder@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Ecz. Hatice Maral</p>
+                            <p class="text-slate-600">Maral Eczanesi - Eczacı</p>
+                            <p class="text-slate-500">İletişim: 534 794 45 98 | ecz_hatice21@hotmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-5 border-t border-slate-800 bg-slate-900 flex justify-end gap-4">
+                <button onclick="closeCVModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg text-sm">Kapat</button>
+                <button onclick="window.print()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-slate-900 font-bold rounded-lg flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-print"></i> PDF Olarak Yazdır / Kaydet
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BAŞARI MODALİ (Mesaj Gönderme Bildirimi) -->
+    <div id="success-modal" class="hidden fixed inset-0 z-[110] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl w-full max-w-md text-center space-y-6 shadow-2xl">
+            <div class="w-16 h-16 bg-teal-500/10 text-teal-400 rounded-full flex items-center justify-center text-3xl mx-auto border border-teal-500/30">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold">Mesajınız İletildi!</h3>
+                <p class="text-slate-400 text-sm">Form başarıyla gönderildi. Sizinle en kısa sürede iletişime geçeceğim.</p>
+            </div>
+            <button onclick="closeSuccessModal()" class="px-6 py-3 bg-teal-600 hover:bg-teal-500 text-slate-900 font-bold rounded-lg w-full">Harika</button>
+        </div>
+    </div>
+
+    <!-- AI BİLDİRİM TOAST MODALİ -->
+    <div id="toast-modal" class="hidden fixed bottom-6 right-6 z-[120] bg-slate-800 border border-slate-700 text-slate-100 p-4 rounded-xl shadow-2xl max-w-sm flex items-start gap-3">
+        <div class="w-8 h-8 rounded-full bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 flex-shrink-0 mt-0.5">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div>
+            <h4 id="toast-title" class="font-bold text-sm">Bildirim</h4>
+            <p id="toast-message" class="text-xs text-slate-400 mt-1">İşlem başarıyla tamamlandı.</p>
+        </div>
+        <button onclick="closeToast()" class="text-slate-400 hover:text-white focus:outline-none text-lg">&times;</button>
+    </div>
+
+    <script>
+        // Mobil Menü Açma/Kapama
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Portfolyo / Sertifika Filtreleme
+        function filterItems(category) {
+            const items = document.querySelectorAll('.grid-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            buttons.forEach(btn => {
+                if (
+                    (category === 'all' && btn.innerText.includes('HEPSİ')) ||
+                    (category === 'cert' && btn.innerText.includes('SERTİFİKALAR')) ||
+                    (category === 'hobby' && btn.innerText.includes('YARATICI HOBİLER'))
+                ) {
+                    btn.classList.add('bg-teal-600', 'text-slate-900');
+                    btn.classList.remove('text-slate-400', 'hover:text-white');
+                } else {
+                    btn.classList.remove('bg-teal-600', 'text-slate-900');
+                    btn.classList.add('text-slate-400', 'hover:text-white');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // CV Modal Kontrolleri
+        function openCVModal() {
+            document.getElementById('cv-modal').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeCVModal() {
+            document.getElementById('cv-modal').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // İletişim Form Gönderimi (Simüle Edilmiş)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('success-modal').classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        function showToast(title, message) {
+            const toast = document.getElementById('toast-modal');
+            document.getElementById('toast-title').innerText = title;
+            document.getElementById('toast-message').innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 6000);
+        }
+
+        function closeToast() {
+            document.getElementById('toast-modal').classList.add('hidden');
+        }
+
+        const omerResumeContext = `
+        Sen Ömer Gündüz'ün profesyonel yapay zeka ikizisin (AI Clone). Aşağıdaki CV verilerini temel alarak sorulara tamamen Ömer gibi ("ben" diliyle) ya da profesyonel bir asistan diliyle Türkçe olarak cevap vermelisin.
+        
+        KİŞİSEL BİLGİLER:
+        - İsim: Ömer Gündüz (1995, Diyarbakır doğumlu, 30 yaşında).
+        - İletişim: +90 (551) 261 84 49, worldwide.omer@gmail.com, Diyarbakır Merkez.
+        - LinkedIn: linkedin.com/in/ömer-gündüz-77a667b7/
+        - GitHub: github.com/Lionsamada
+        - Eğitim: Adıyaman Üniversitesi Bilgisayar Bilimleri Fakültesi, Bilgisayar Programcılığı Ön Lisans Mezunu (2013-2015, GNO: 3.20/4.00). Odak alanları: Yazılım geliştirme, veri analitiği, SQL, algoritmalar.
+        
+        DENEYİM GEÇMİŞİ:
+        1. Kıdemli Uzman Tıbbi Tanıtım Temsilcisi | Vem İlaç Pazarlama (Ağustos 2025 - Devam Ediyor): Diyarbakır, Mardin ve Van illerini kapsayan geniş bölgede veri odaklı tanıtım yönetimi, müşteri portföy segmentasyonu, CRM süreçleri, satış hedefleri koordinasyonu.
+        2. Tıbbi Tanıtım Temsilcisi | Santa Farma İlaç (Mayıs 2024 - Ağustos 2025) | Diyarbakır: Ortopedi, FTR, KBB, Pediatri, Beyin Cerrahisi, Acil Hekimliği, Aile Hekimliği branşlarında aktif sunum, eğitim ve ziyaret planlaması.
+        3. Tıbbi Tanıtım Temsilcisi | Koçak Farma İlaç (Mart 2020 - Mayıs 2024) | Mardin & Diyarbakır: Kadın Doğum, Dahiliye, Endokrin, Hematoloji, Üroloji, Aile Hekimliği. Mardin'de sıfırdan portföy kurarak Diyarbakır'a transfer etme başarısı.
+        4. Arşiv Sorumlusu | Özel Cihanpol Hastanesi (Mayıs 2017 - Haziran 2019) | Mardin: Belge yönetimi optimizasyonu, bilgi akış hızı, veri güvenliği standartları.
+        
+        YETENEKLER:
+        - Yazılım/Teknik: C#, .NET, ASP.NET, MSSQL Server, Web Tabanlı Database, Veri Analitiği, Algoritma Tasarımı, Web Tasarımı.
+        - Satış/Strateji: Portföy Yönetimi, Bölge Segmentasyonu, CRM Stratejileri, Bütçe Planlama, Rakip Analizi, Ürün Tanıtımı, Kampanya Yönetimi.
+        - Sosyal/Liderlik: Gelişmiş Sunum Becerileri, İkna Kabiliyeti, Uygulamalı Tiyatro (Hitabet, beden dili ve ses tonu kullanımı).
+        
+        SERTİFİKALAR VE HOBİLER:
+        - T.C. Sağlık Bakanlığı Ürün Tanıtım Temsilcisi Belgesi (ÜTT) - İstanbul Ticaret Üni, 2020.
+        - Uygulamalı Tiyatro Eğitimi - Mardin Artuklu Halk Eğitim Merkezi, 2023.
+        - Marka Danışmanlığı - Orta Doğu Patent, 2013.
+        - Hobiler: Müzik, Film, Web Tasarımı, Logo & Grafik Tasarımı.
+        
+        KURALLAR:
+        - Sorulara her zaman profesyonel, yapıcı ve samimi bir dille cevap ver.
+        - Vermiş olduğun bilgilerde CV verilerine sadık kal, hayali deneyimler uydurma.
+        - Yazılım altyapın ile ilaç sektörü saha tecrübeni nasıl harmanlayıp veri odaklı satış yönettiğini her fırsatta vurgula.
+        `;
+
+        async function callGemini(userPrompt, systemPrompt) {
+            const apiKey = ""; // Canvas runtime injection için boş bırakıldı
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userPrompt }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                }
+            };
+
+            let delay = 1000;
+            const maxRetries = 3;
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) {
+                        if (response.status === 429 && i < maxRetries - 1) {
+                            await new Promise(res => setTimeout(res, delay));
+                            delay *= 2;
+                            continue;
+                        }
+                        throw new Error(`HTTP hatası! Durum: ${response.status}`);
+                    }
+                    const result = await response.json();
+                    const candidate = result.candidates?.[0];
+                    if (candidate && candidate.content?.parts?.[0]?.text) {
+                        return candidate.content.parts[0].text;
+                    }
+                    throw new Error("Yapay zekadan geçersiz yanıt alındı.");
+                } catch (error) {
+                    if (i === maxRetries - 1) throw error;
+                    await new Promise(res => setTimeout(res, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        async function sendChatMessage() {
+            const inputEl = document.getElementById('chat-input');
+            const chatBox = document.getElementById('chat-box');
+            const userText = inputEl.value.trim();
+            if (!userText) return;
+
+            // Kullanıcı mesajını ekle
+            appendMessage(userText, 'user');
+            inputEl.value = '';
+
+            // Loading animasyonu ekle
+            const loaderId = appendMessage('<i class="fa-solid fa-circle-notch animate-spin"></i> Dijital Ömer düşünüyor...', 'bot', true);
+
+            try {
+                const systemPrompt = omerResumeContext + "\nÖmer Gündüz gibi samimi, kendinden emin ve profesyonel konuş. Cevabı çok uzatmadan, net ve odaklı ver.";
+                const aiResponse = await callGemini(userText, systemPrompt);
+                
+                // Loader'ı kaldır ve gerçek cevabı ekle
+                document.getElementById(loaderId).remove();
+                appendMessage(aiResponse, 'bot');
+            } catch (error) {
+                console.error(error);
+                document.getElementById(loaderId).remove();
+                appendMessage('Üzgünüm, şu anda bağlantıda bir sorun yaşıyorum. Lütfen daha sonra tekrar deneyin veya bana doğrudan e-posta gönderin!', 'bot');
+            }
+        }
+
+        function appendMessage(text, sender, isLoader = false) {
+            const chatBox = document.getElementById('chat-box');
+            const msgDiv = document.createElement('div');
+            const uniqueId = 'msg-' + Math.random().toString(36).substr(2, 9);
+            msgDiv.id = uniqueId;
+
+            if (sender === 'user') {
+                msgDiv.className = 'bg-teal-600 text-slate-900 p-3 rounded-xl max-w-[85%] self-end ml-auto text-sm font-semibold';
+                msgDiv.innerText = text;
+            } else {
+                msgDiv.className = 'bg-slate-900/60 border border-slate-800 p-3 rounded-xl max-w-[85%] text-slate-300 text-sm leading-relaxed';
+                if (isLoader) {
+                    msgDiv.innerHTML = text;
+                } else {
+                    msgDiv.innerText = text;
+                }
+            }
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return uniqueId;
+        }
+
+        function quickAsk(question) {
+            document.getElementById('chat-input').value = question;
+            sendChatMessage();
+        }
+
+        function clearChat() {
+            document.getElementById('chat-box').innerHTML = `
+                <div class="bg-slate-900/60 border border-slate-800 p-3 rounded-xl max-w-[85%] text-slate-300">
+                    Merhaba! Ben Ömer Gündüz'ün dijital ikiziyim. Sektör deneyimim ve yazılım altyapım hakkında sorularınızı bekliyorum.
+                </div>
+            `;
+            showToast("Sohbet Temizlendi", "Yapay zeka asistanı sohbet geçmişi sıfırlandı.");
+        }
+
+        async function generateLetter() {
+            const company = document.getElementById('letter-company').value.trim();
+            const role = document.getElementById('letter-role').value.trim();
+            const loader = document.getElementById('letter-loader');
+            const output = document.getElementById('letter-output');
+
+            if (!company || !role) {
+                showToast("Eksik Bilgi", "Lütfen ön yazı üretmek için Şirket Adı ve Pozisyon alanlarını doldurun.");
+                return;
+            }
+
+            loader.classList.remove('hidden');
+
+            try {
+                const systemPrompt = omerResumeContext + `
+                Kullanıcının belirteceği Şirket ve Pozisyon için Ömer Gündüz ağzından yazılmış samimi, iddialı ve profesyonel bir Ön Yazı (Cover Letter) oluştur.
+                Özellikle yazılım programcılığı kökenli olmasının getirdiği 'veri analitiği' yeteneğini ve 8 yıllık saha satış/tıbbi tanıtım deneyimini bu pozisyonda nasıl kullanacağını harika bir dille açıkla.
+                Mektup standart profesyonel formatta olsun (Sayın Yetkili hitabı ile başlayıp, Saygılarımla Ömer Gündüz ile bitsin).
+                `;
+                const prompt = `${company} firmasında açılan ${role} pozisyonu için özel bir ön yazı yaz.`;
+                
+                const responseText = await callGemini(prompt, systemPrompt);
+                output.innerText = responseText;
+                showToast("Ön Yazı Hazır!", `${company} firmasına özel ön yazınız başarıyla üretildi.`);
+            } catch (error) {
+                console.error(error);
+                output.innerText = "Yazı oluşturulurken bir hata oluştu. Lütfen bağlantınızı kontrol edip tekrar deneyin.";
+                showToast("Hata Oluştu", "Yapay zeka ön yazı oluşturma isteğine yanıt vermedi.");
+            } finally {
+                loader.classList.add('hidden');
+            }
+        }
+
+        function copyLetter() {
+            const text = document.getElementById('letter-output').innerText;
+            if (text.includes("Ön yazı oluşturmak için") || text.includes("hata oluştu")) {
+                showToast("Kopyalanamadı", "Lütfen önce geçerli bir ön yazı üretin.");
+                return;
+            }
+
+            // Güvenilir kopyalama protokolü
+            const tempTextArea = document.createElement("textarea");
+            tempTextArea.value = text;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            try {
+                document.execCommand('copy');
+                showToast("Panoya Kopyalandı", "Ön yazı başarıyla panoya kopyalandı!");
+            } catch (err) {
+                showToast("Hata", "Panoya kopyalama başarısız oldu.");
+            }
+            document.body.removeChild(tempTextArea);
+        }
+    </script>
+</body>
+</html>
