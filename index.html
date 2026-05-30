@@ -53,6 +53,21 @@
             background: #14b8a6;
         }
     </style>
+    
+    <!-- Görüntü yükleme hatası durumunda çalışacak fonksiyon (Head içine alındı ki erken yüklensin) -->
+    <script>
+        function handleImageError(imageElement, initials) {
+            imageElement.onerror = null; // Sonsuz döngüyü engellemek için
+            const parent = imageElement.parentElement;
+            if (parent) {
+                parent.innerHTML = `
+                    <div class="w-full h-full bg-slate-900 flex items-center justify-center font-extrabold text-brand-500 text-3xl select-none">
+                        ${initials}
+                    </div>
+                `;
+            }
+        }
+    </script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-brand-500 selection:text-slate-950">
 
@@ -130,10 +145,18 @@
                         <!-- Dekoratif Arka Plan Halkaları -->
                         <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-brand-500/20 to-teal-500/20 blur-xl animate-pulse"></div>
                         <div class="absolute inset-0 rounded-2xl border-2 border-slate-800 bg-slate-900/50 backdrop-blur-md overflow-hidden flex flex-col items-center justify-center p-6 text-center shadow-2xl">
-                            <!-- Profesyonel Avatar Temsili -->
-                            <div class="w-28 h-28 rounded-full border-4 border-brand-500/50 overflow-hidden mb-4 bg-slate-800 flex items-center justify-center shadow-lg">
-                                <span class="text-4xl font-black text-brand-500">ÖG</span>
+                            
+                            <!-- Fotoğraf Alanı ve Gelişmiş Çerçeve Tasarımı -->
+                            <div id="hero-profile-container" onclick="toggleImageModal()" title="Fotoğrafı Büyüt" class="cursor-pointer w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-brand-500 shadow-[0_0_30px_rgba(20,184,166,0.3)] overflow-hidden mb-5 bg-slate-800 mx-auto relative group flex items-center justify-center ring-4 ring-slate-950/50">
+                                <img src="cvfoto.jpg" alt="Ömer Gündüz" 
+                                     onerror="handleImageError(this, 'ÖG')"
+                                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <!-- Üzerine gelince büyüteç efekti -->
+                                <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                                    <svg class="w-8 h-8 text-white drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                                </div>
                             </div>
+                            
                             <h3 class="text-xl font-bold text-white">Ömer Gündüz</h3>
                             <p class="text-xs text-brand-500 font-semibold mb-3">Kıdemli Uzman Tıbbi Tanıtım Temsilcisi</p>
                             <div class="space-y-1.5 w-full text-xs text-slate-400 border-t border-slate-800/80 pt-4">
@@ -171,6 +194,7 @@
                     <h4 class="text-xl font-bold text-white">Kıdemli Uzman Tıbbi Tanıtım Temsilcisi</h4>
                     <span class="text-brand-500 font-semibold text-sm">Vem İlaç Pazarlama Şti.</span>
                     <ul class="mt-4 space-y-2 text-sm text-slate-400 list-disc list-inside">
+                       <li>Tüp Bebek, Kadın Doğum, Üroloji ve Cildiye branşlarında aktif tanıtım.</li>
                         <li>Diyarbakır, Mardin ve Van illerini kapsayan geniş sorumluluk alanında veri odaklı stratejik tanıtım yönetimi.</li>
                         <li>Bölge pazar payı dinamiklerini analiz ederek müşteri segmentasyonu yapılması ve CRM optimizasyonu.</li>
                         <li>Departman içi koordinasyon ve aylık/yıllık bölge satış hedeflerinin istikrarlı şekilde aşılması.</li>
@@ -190,7 +214,7 @@
                     <h4 class="text-xl font-bold text-white">Tıbbi Tanıtım Temsilcisi</h4>
                     <span class="text-brand-500 font-semibold text-sm">Santa Farma İlaç Sanayii A.Ş.</span>
                     <ul class="mt-4 space-y-2 text-sm text-slate-400 list-disc list-inside">
-                        <li>Ortopedi, Fizik Tedavi, KBB, Pediatri, Beyin Cerrahisi, Acil ve Aile Hekimliği branşlarında aktif tanıtım.</li>
+                        <li>Ortopedi, Fizik Treati, KBB, Pediatri, Beyin Cerrahisi, Acil ve Aile Hekimliği branşlarında aktif tanıtım.</li>
                         <li>Kritik hekim ve eczacı ağının sistemli ziyaret takibi ve bölgesel pazar analizleriyle hızlı çözüm üretimi.</li>
                         <li>Bölgesel tıbbi seminerler, yuvarlak masa toplantıları ve ürün güvenliği lansmanlarının organizasyonu.</li>
                     </ul>
@@ -404,7 +428,6 @@
                     </p>
                     <a href="https://aistudio.google.com/apikey" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-xl shadow-yellow-500/10">
                         ⚡ Ücretsiz API Anahtarı Al (Google)
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
                 </div>
 
@@ -412,7 +435,12 @@
                 <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
                     <div class="flex items-center space-x-3">
                         <div class="relative">
-                            <div class="h-10 w-10 rounded-full bg-brand-500/20 flex items-center justify-center text-lg font-bold text-brand-400">ÖG</div>
+                            <!-- Chat avatar alanı ve kırılma koruması -->
+                            <div id="chat-avatar-container" class="h-10 w-10 rounded-full bg-slate-800 overflow-hidden border border-brand-500/50 flex items-center justify-center text-sm font-bold text-brand-400">
+                                <img src="cvfoto.jpg" alt="ÖG" 
+                                     onerror="handleImageError(this, 'ÖG')"
+                                     class="w-full h-full object-cover">
+                            </div>
                             <span class="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-green-500 border-2 border-slate-900"></span>
                         </div>
                         <div>
@@ -429,7 +457,12 @@
                 <div id="chat-messages" class="flex-1 overflow-y-auto space-y-4 pr-2 text-sm">
                     <!-- Bot Welcome Message -->
                     <div class="flex gap-3">
-                        <div class="h-8 w-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-brand-400 shrink-0">ÖG</div>
+                        <div class="h-8 w-8 rounded-full bg-slate-800 overflow-hidden flex items-center justify-center text-xs font-bold shrink-0">
+                            <!-- Resim yüklenemezse fallback tetiklenecek -->
+                            <img src="cvfoto.jpg" alt="ÖG" 
+                                 onerror="handleImageError(this, 'ÖG')"
+                                 class="w-full h-full object-cover">
+                        </div>
                         <div class="bg-slate-800 text-slate-200 px-4 py-3 rounded-2xl rounded-tl-none max-w-[85%] leading-relaxed">
                             Merhaba! Ben Ömer Gündüz'ün dijital ikiziyim. 8 yıllık medikal saha satışı deneyimim, yazılım ve veri analitiği yetkinliklerim ya da uygulamalı tiyatro geçmişim hakkında merak ettiğiniz her şeyi bana sorabilirsiniz.
                         </div>
@@ -476,7 +509,6 @@
                     </p>
                     <a href="https://aistudio.google.com/apikey" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition-all shadow-xl shadow-yellow-500/10">
                         ⚡ Ücretsiz API Anahtarı Al (Google)
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
                 </div>
 
@@ -522,11 +554,11 @@
         </div>
     </section>
 
-    <!-- CONTACT & REFERENCES SECTION -->
+    <!-- CONTACT SECTION -->
     <section id="iletisim" class="py-20 lg:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             
-            <!-- Bilgiler ve Referanslar -->
+            <!-- İletişim Bilgileri -->
             <div class="lg:col-span-7 space-y-12">
                 <div class="space-y-4">
                     <h2 class="text-xs font-bold text-brand-500 uppercase tracking-widest">İletişim & Ağ</h2>
@@ -551,7 +583,7 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
 
             <!-- Sosyal Link Paneli -->
             <div class="lg:col-span-5">
@@ -652,7 +684,7 @@
                             <span>Tıbbi Tanıtım Temsilcisi</span>
                             <span>Mart 2020 - Mayıs 2024</span>
                         </div>
-                        <p class="text-xs font-semibold text-brand-600">Koçak Farma İlaç Ve Kimya A.Ş. - Mardin / Diyarbakır</p>
+                        <p class="text-xs font-semibold text-brand-600">Koçak Farma İlaç Ve Kimya Sanayi A.Ş. - Mardin / Diyarbakır</p>
                         <p class="text-xs text-slate-700 leading-relaxed">Kadın Doğum, Dahiliye, Endokrin, Hematoloji, Üroloji ve Aile Hekimliği branşlarında aktif portföy yönetimi ve tanıtım faaliyetlerini yürütmek. Mardin ve ilçelerinde sıfırdan pazar payı inşa etmek.</p>
                     </div>
 
@@ -676,8 +708,8 @@
                     <p class="text-xs text-slate-700"><strong>Diploma Notu:</strong> 3.20/4.00 (Ön Lisans)</p>
                     <p class="text-xs text-slate-700"><strong>Odak Alanları:</strong> Yazılım Geliştirme (C#), Algoritma Tasarımı, Veritabanı Yönetimi (SQL) ve Veri Analitiği.</p>
                 </div>
+            </div>
 
-               
             <!-- Modal Footer -->
             <div class="p-4 border-t border-slate-800 flex justify-end gap-3 bg-slate-950">
                 <button onclick="toggleCVModal()" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 px-5 py-2.5 rounded-xl text-xs font-semibold transition-all">
@@ -690,6 +722,15 @@
         </div>
     </div>
 
+    <!-- MODAL: FOTOĞRAF GÖRÜNTÜLEYİCİ -->
+    <div id="image-modal" class="fixed inset-0 bg-slate-950/95 backdrop-blur-sm z-[100] flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300" onclick="toggleImageModal()">
+        <button onclick="toggleImageModal()" class="absolute top-6 right-6 h-12 w-12 rounded-full bg-slate-900 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-brand-500 flex items-center justify-center transition-all z-10 shadow-2xl">
+            ✕
+        </button>
+        <div class="relative max-w-5xl max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl border border-slate-800/50" onclick="event.stopPropagation()">
+            <img src="cvfoto.jpg" alt="Ömer Gündüz Büyütülmüş" class="w-full h-full object-contain max-h-[90vh]">
+        </div>
+    </div>
 
     <!-- JAVASCRIPT: LOGIC, STATE MANAGEMENT, AI INTEGRATION -->
     <script>
@@ -905,7 +946,9 @@
                 `;
             } else if (sender === "loading") {
                 wrapper.innerHTML = `
-                    <div class="h-8 w-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-brand-400 shrink-0">ÖG</div>
+                    <div class="h-8 w-8 rounded-full bg-slate-800 overflow-hidden flex items-center justify-center text-xs font-bold shrink-0">
+                        <img src="cvfoto.jpg" alt="ÖG" onerror="handleImageError(this, 'ÖG')" class="w-full h-full object-cover grayscale">
+                    </div>
                     <div class="bg-slate-800 text-slate-400 px-4 py-3 rounded-2xl rounded-tl-none max-w-[85%] italic flex items-center gap-2">
                         <span class="animate-pulse h-2 w-2 rounded-full bg-brand-500"></span>
                         ${text}
@@ -913,9 +956,11 @@
                 `;
             } else {
                 // Markdown benzeri formatlama (Örn: **kalın** veya satır başları)
-                const formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                const formattedText = text.replace(/\*\*(.*?)\*\"/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
                 wrapper.innerHTML = `
-                    <div class="h-8 w-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-brand-400 shrink-0">ÖG</div>
+                    <div class="h-8 w-8 rounded-full bg-slate-800 overflow-hidden flex items-center justify-center text-xs font-bold shrink-0">
+                        <img src="cvfoto.jpg" alt="ÖG" onerror="handleImageError(this, 'ÖG')" class="w-full h-full object-cover">
+                    </div>
                     <div class="bg-slate-800 text-slate-200 px-4 py-3 rounded-2xl rounded-tl-none max-w-[85%] leading-relaxed">
                         ${formattedText}
                     </div>
@@ -927,6 +972,7 @@
             return messageId;
         }
 
+        // Loading bubble silme fonksiyonu
         function removeLoadingBubble(id) {
             const element = document.getElementById(id);
             if (element) element.remove();
@@ -952,7 +998,7 @@
 
             const userPrompt = `
             ${company} firmasında açık bulunan "${position}" pozisyonu için benim ağzımdan (Ömer Gündüz) yazılmış, aşırı profesyonel, samimi, satış tecrübelerim ile yazılım yetkinliğimin bu role nasıl benzersiz bir katkı sağlayacağını açıklayan mükemmel bir ön yazı (cover letter) oluştur.
-            Ön yazıda Doç. Dr. Akın Önder veya Ecz. Hatice Maral gibi referanslarınla olan sektörel güven bağından, tiyatro eğitiminin iletişim gücünden de ince bir şekilde bahset.
+            Ön yazıda tiyatro eğitiminin iletişim gücünden ve sahada hekimlerle kurduğun güçlü bağdan ince bir şekilde bahset. Asla isim vererek herhangi bir kişiyi referans gösterme.
             `;
 
             try {
@@ -994,6 +1040,18 @@
                 showToast("Ön yazı başarıyla panoya kopyalandı!", "success");
             } catch (err) {
                 showToast("Kopyalama başarısız oldu, lütfen manuel kopyalayın.", "error");
+            }
+        }
+
+        // FOTOĞRAF MODAL MANAGEMENT
+        function toggleImageModal() {
+            const modal = document.getElementById('image-modal');
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                setTimeout(() => modal.classList.remove('opacity-0'), 10); // Fade in efekti
+            } else {
+                modal.classList.add('opacity-0'); // Fade out efekti
+                setTimeout(() => modal.classList.add('hidden'), 300);
             }
         }
 
